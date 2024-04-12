@@ -1,0 +1,22 @@
+{
+  "name": "solution",
+  "version": "1.0.0",
+  "description": "This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy-token": "hardhat run --network evmSidechain scripts/deploy-token.ts",
+    "deploy-voting": "hardhat run --network evmSidechain scripts/deploy-voting.ts",
+    "buy": "hardhat run --network evmSidechain scripts/buy.ts",
+    "create-proposal": "hardhat run --network evmSidechain scripts/create-proposal.ts",
+    "vote-proposal": "hardhat run --network evmSidechain scripts/vote-proposal.ts",
+    "flatten": "hardhat flatten > Flattened.sol"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "ethers": "^6.11.1",
+    "hardhat": "^2.22.2"
+  }
+}
